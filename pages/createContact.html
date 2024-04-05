@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Contact</title>
+    <link rel="stylesheet" href="/styles/create.css">
+</head>
+<body>
+    <h1>Create Contact</h1>
+    <div class="create">
+        <form ng-submit="addContact()" class="addContact">
+            <label for="name">Name</label>
+            <input type="text" ng-model="newContact.name" id="name" placeholder="Name">
+
+            <label for="email">Email</label>
+            <input type="email" ng-model="newContact.email" id="email" placeholder="Email">
+
+            <label for="phone">Phone</label>
+            <input type="number" ng-model="newContact.phone" id="phone" placeholder="Phone">
+            
+            <label for="instagram">Instagram</label>
+            <input type="text" ng-model="newContact.instagram" id="instagram" placeholder="Instagram">
+
+            <label for="facebook">Facebook</label>
+            <input type="text" ng-model="newContact.facebook" id="facebook" placeholder="Facebook">
+
+            <label for="linkedin">LinkedIn</label>
+            <input type="text" ng-model="newContact.linkedin" id="linkedin" placeholder="LinkedIn">
+            <br>
+            <button class="btn">Add Contact</button>
+        </form>
+    </div>
+</body>
+</html>

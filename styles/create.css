@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(167, 167, 255);
+}
+.create{
+    margin-top: 20px;
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    width: 100%;
+}
+label{
+    padding: 5px;
+    display: block;
+}
+input{
+    width: 600px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    padding: 5px;
+}
+
+h1{
+    background-color: rgb(188, 188, 255);
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    color: white;
+}
+button{
+    width: 600px;
+    padding: 8px;
+    margin-top: 20px;
+    color: white;
+    background-color: pink;
+    border: 2px solid transparent;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(180, 87, 102);
+}

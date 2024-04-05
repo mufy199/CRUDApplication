@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Contact</title>
+    <link rel="stylesheet" href="/styles/create.css">
+    <link rel="stylesheet" href="/styles/home.css">
+</head>
+
+<body>
+    <h1>Search Contact</h1>
+    <div class="create">
+        <form ng-submit="searchContacts()">
+            <label for="name">Name</label>
+            <input type="text" ng-model="newContact.name" placeholder="Name">
+            <br>
+            <button>Search Contact</button>
+        </form>
+    </div>
+    <div>
+        <table class="collection">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Instagram</th>
+                <th>Facebook</th>
+                <th>LinkedIn</th>
+            </tr>
+            <tr class="collection-item" ng-repeat="contact in searched">
+                <td>{{contact.name}}</td>
+                <td>{{contact.email}}</td>
+                <td>{{contact.phone}}</td>
+                <td>{{contact.instagram}}</td>
+                <td>{{contact.facebook}}</td>
+                <td>{{contact.linkedin}}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
